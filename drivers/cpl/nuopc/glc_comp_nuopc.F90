@@ -298,7 +298,6 @@ contains
     type(ESMF_Time)         :: startTime             ! Start time
     type(ESMF_Time)         :: stopTime              ! Stop time
     type(ESMF_TimeInterval) :: timeStep              ! Model timestep
-    type(ESMF_Calendar)     :: esmf_calendar         ! esmf calendar
     type(ESMF_CalKind_Flag) :: esmf_caltype          ! esmf calendar type
     integer                 :: ref_tod               ! reference time of day (sec)
     integer                 :: yy,mm,dd              ! Temporaries for time query
@@ -504,15 +503,15 @@ contains
     areas_vec(:) = areas_vec(:)/(radius*radius) ! convert from m^2 to radians^2
     do n = 1, npts
        if ( abs(mesh_lons(n) - lons_vec(n)) > tolerance) then
-          write(6,101),n, lons_vec(n), mesh_lons(n), gindex(n)
-101       format('ERROR: CISM n, lon, mesh_lon, gindex = ',i6,2(f20.10,2x),i8)
+          write(6,101) n, lons_vec(n), mesh_lons(n), gindex(n)
+101       format('ERROR: CISM n, lon, mesh_lon, gindex = ',i6,f20.10,f20.10,i8)
           !          write(6,102) abs(mesh_lons(n) - lons_vec(n))
           !102       format('ERROR: CISM lon diff = ',f20.10,' is too large')
           !call shr_sys_abort()
        end if
        if (abs(mesh_lats(n) - lats_vec(n)) > tolerance) then
-          write(6,103),n, lats_vec(n), mesh_lats(n), gindex(n)
-103       format('ERROR: CISM n, lat, mesh_lat, gindex = ',i6,2(f20.10,2x),i8)
+          write(6,103) n, lats_vec(n), mesh_lats(n), gindex(n)
+103       format('ERROR: CISM n, lat, mesh_lat, gindex = ',i6,f20.10,f20.10,i8)
           !          write(6,104) abs(mesh_lats(n)-lats_vec(n))
           !104       format('ERROR: CISM lat diff = ',f20.10,' too large')
           !call shr_sys_abort()
