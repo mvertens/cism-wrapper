@@ -3,8 +3,8 @@
 
 [submodule "source_cism"]
 path = source_cism
-url = https://github.com/mvertens/cism
-fxtag = smoothing_algo2
+url = https://github.com/mpetrini-norce/CISM
+fxtag = float1
 fxrequired = AlwaysRequired
 fxDONOTUSEurl = https://github.com/ESCOMP/cism
 
