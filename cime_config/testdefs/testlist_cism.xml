@@ -105,7 +105,7 @@
 
   <test name="ERS_D_Ly3" grid="f09_g17_gris4" compset="T1850Gg" testmods="cism/cmip6_evolving_icesheet">
     <machines>
-      <machine name="betzy" compiler="intel" category="aux_cism_noresm">
+      <machine name="betzy" compiler="gnu" category="aux_cism_noresm">
         <options>
           <option name="wallclock">1:00</option>
           <option name="comment">Want both an ERS test and a _D test that include the cmip6_evolving_icesheet usermods</option>
@@ -160,11 +160,11 @@
     </machines>
   </test>
 
-  <test name="ERS_Lm24" grid="f19_f19_ais8gris4_mtn14" compset="I1850Clm50SpGag">
+  <test name="ERS_Ld1095" grid="ne30pg3_tn14_ais8gris4" compset="I1850Clm50SpGag">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm">
         <options>
-          <option name="wallclock">1:59:00</option>
+          <option name="wallclock">2:59:00</option>
           <!-- 2016-10-25: At least in the ERS_Ly5 test: There is a big jump in
                memory at the start of year 2. In the 5-year run, things then
                stay roughly constant after that. Note that the start of year 2
@@ -179,7 +179,7 @@
     </machines>
   </test>
 
-  <test name="ERI_Lm24" grid="f19_f19_mtn14" compset="I1850Clm50SpG" testmods="cism/isostasy_period4">
+  <test name="ERI_Ld730" grid="f19_f19_mtn14" compset="I1850Clm50SpG" testmods="cism/isostasy_period4">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm">
         <options>
@@ -303,6 +303,18 @@
         <options>
           <option name="wallclock">1:00:00</option>
           <option name="comment">Include an ERS_D test with multiple ice sheets</option>
+        </options>
+      </machine>
+    </machines>
+  </test>
+
+  <test name="ERS_D_Ly3" grid="f09_tn14_ais8gris4" compset="TC1850Gag" testmods="cism/ocn2glc_cplhist">
+    <machines>
+      <machine name="betzy" compiler="intel" category="aux_cism_noresm">
+      <machine name="betzy" compiler="gnu" category="prealpha_noresm">
+        <options>
+          <option name="wallclock">1:00:00</option>
+          <option name="comment">Include an ERS_D test with multiple ice sheets and coupling with ocean</option>
         </options>
       </machine>
     </machines>
