@@ -1,2 +1,0 @@
-ocn2glc_coupling = .true.
-glc_renormalize_smb='on'

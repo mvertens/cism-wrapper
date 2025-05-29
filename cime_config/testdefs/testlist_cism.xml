@@ -311,7 +311,6 @@
   <test name="ERS_D_Ly3" grid="f09_tn14_ais8gris4" compset="TC1850Gag" testmods="cism/ocn2glc_cplhist">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm">
-      <machine name="betzy" compiler="gnu" category="prealpha_noresm">
         <options>
           <option name="wallclock">1:00:00</option>
           <option name="comment">Include an ERS_D test with multiple ice sheets and coupling with ocean</option>
