@@ -2829,33 +2829,6 @@ Sub-elements of each entry include:
     </desc>
   </entry>
  
-  <entry id="smooth_extrapocean">
-    <type>logical</type>
-    <category>cism_config_ho_options</category>
-    <group>ho_options</group>
-    <values>
-      <value>.true.</value>
-    </values>
-    <desc> Flag that indicates whether or not smoothing ocean fields extrapolated 
-      in ice shelf cavities. For now ocean thermal forcing only, we will add later
-	  ocean temperature and salinity to force plume models or non-ISMIP params.
-      Default: true
-    </desc>
-  </entry>
-
-  <entry id="smoothiter">
-    <type>integer</type>
-    <category>cism_config_ho_options</category>
-    <group>ho_options</group>
-    <values>
-      <value>10</value>
-    </values>
-	<desc> Number of iterations in the smoothing algorithm for ocean fiels 
-	  extrapolated in ice shelf cavities.
-	  Default: 10
-    </desc>
-  </entry>
-
   <!-- =============================================================  -->
   <!-- group: cism.icesheet.config: GTHF (geothermal heat flux)       -->
   <!-- =============================================================  -->

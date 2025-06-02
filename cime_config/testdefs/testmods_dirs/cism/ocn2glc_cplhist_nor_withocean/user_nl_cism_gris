@@ -1,0 +1,15 @@
+bmlt_float = 6
+bmlt_float_thermal_forcing_param = 0
+bmlt_float_ismip6_magnitude = 1
+!isostasy = 0
+!limit_marine_cliffs = .false.
+!nzocn = 30
+!dzocn = 60.
+ocean_data_domain = 1
+ocean_data_extrapolate = 1
+!gamma0 = 0
+block_inception = .true.
+cisminputfile = '/cluster/projects/nn11022k/mpet/dataset/cism_rest/cism.gris.r.0004-01-01-00000.nc'
+restart = 1
+!cisminputfile = '$DIN_LOC_ROOT/glc/cism/Greenland/greenland_4km_epsg3413_c171126_retreatmask.nc'
+
