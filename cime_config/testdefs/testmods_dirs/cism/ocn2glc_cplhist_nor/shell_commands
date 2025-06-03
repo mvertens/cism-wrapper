@@ -1,20 +1,14 @@
-
-#./xmlchange DLND_CPLHIST_DIR='$DIN_LOC_ROOT/cplhist/noresm3_0/test-dlnd2glc-docn2glc'
-#./xmlchange DLND_CPLHIST_CASE=B2G1850_f09_tn14_gl4ais8_coldstart_20250122
-#./xmlchange DLND_CPLHIST_YR_START=2
-#./xmlchange DLND_CPLHIST_YR_ALIGN=2
-#./xmlchange DLND_CPLHIST_YR_END=6
-#./xmlchange DOCN_CPLHIST_CASE=B2G1850_f09_tn14_gl4ais8_coldstart_20250122
-#./xmlchange DOCN_CPLHIST_DIR='$DIN_LOC_ROOT/cplhist/noresm3_0/test-dlnd2glc-docn2glc'
-#./xmlchange DOCN_CPLHIST_YR_ALIGN=2
-#./xmlchange DOCN_CPLHIST_YR_START=2
-#./xmlchange DOCN_CPLHIST_YR_END=6
-
 ./xmlchange DLND_CPLHIST_DIR='$DIN_LOC_ROOT/cplhist/noresm3_0/n1850.ne30pg3_tn14'
 ./xmlchange DLND_CPLHIST_CASE=n1850.ne30_tn14.rest-NOIIAJRARYF6162OC_20250506.3.0a03b.20250513
 ./xmlchange DLND_CPLHIST_YR_START=2
 ./xmlchange DLND_CPLHIST_YR_ALIGN=2
 ./xmlchange DLND_CPLHIST_YR_END=33
 
+./xmlchange DOCN_CPLHIST_DIR='$DIN_LOC_ROOT/cplhist/noresm3_0/n1850.ne30pg3_tn14'
+./xmlchange DOCN_CPLHIST_CASE=n1850.ne30_tn14.rest-NOIIAJRARYF6162OC_20250506.3.0a03b.20250513
+./xmlchange DOCN_CPLHIST_YR_START=2
+./xmlchange DOCN_CPLHIST_YR_ALIGN=2
+./xmlchange DOCN_CPLHIST_YR_END=33
 
+./xmlchange GLC_AVG_PERIOD=glc_coupling_period
 #./xmlchange INFO_DEBUG=3
