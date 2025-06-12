@@ -308,7 +308,7 @@
     </machines>
   </test>
 
-  <test name="ERS_D_Ly11" grid="ne30pg3_tn14_ais8gris4" compset="TC1850Gag" testmods="cism/ocn2glc_cplhist_nor_withocean">
+  <test name="ERS_D_Ly11" grid="ne30pg3_tn14_ais8gris4" compset="TC1850Gag" testmods="cism/cplhist_nor_ocn2glc">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm"/>
       <machine name="betzy" compiler="gnu" category="aux_cism_noresm"/>
@@ -316,6 +316,26 @@
     <options>
       <option name="wallclock">1:00:00</option>
       <option name="comment">Include an ERS_D test with multiple ice sheets and coupling with ocean</option>
+    </options>
+  </test>
+
+  <test name="ERI_Ly11" grid="ne30pg3_tn14_gris4" compset="TC1850Gg" testmods="cism/cplhist_nor_ocn2glc">
+    <machines>
+      <machine name="betzy" compiler="gnu" category="aux_cism_noresm"/>
+    </machines>
+    <options>
+      <option name="wallclock">1:00:00</option>
+      <option name="comment">Include an ERI test with coupling with ocean</option>
+    </options>
+  </test>
+
+  <test name="ERI_Ly11" grid="ne30pg3_tn14_ais8gris4" compset="TG1850Gag" testmods="cism/cplhist_nor">
+    <machines>
+      <machine name="betzy" compiler="intel" category="aux_cism_noresm"/>
+    </machines>
+    <options>
+      <option name="wallclock">1:00:00</option>
+      <option name="comment">Include an ERI test with multiple ice sheets and DLND-GCPL</option>
     </options>
   </test>
 
