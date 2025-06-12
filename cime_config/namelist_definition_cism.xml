@@ -813,7 +813,7 @@ Sub-elements of each entry include:
     <valid_values>0,1,2,3</valid_values>
     <values>
       <value icesheet="gris">0</value>
-      <value icesheet="ais"> 2</value>
+      <value icesheet="ais">0</value>
     </values>
     <desc>
       0: Quadratic parameterization to compute basal melting from thermal forcing
