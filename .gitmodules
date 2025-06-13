@@ -4,7 +4,7 @@
 [submodule "source_cism"]
 path = source_cism
 url = https://github.com/NorESMhub/CISM
-fxtag = cism_main_2.01.017_noresm_v0
+fxtag = cism_main_2.02.002_noresm_v0
 fxrequired = AlwaysRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/CISM
 
@@ -18,21 +18,21 @@ fxDONOTUSEurl = https://github.com/NorESMhub/cime.git
 [submodule "ccs_config"]
 path = ccs_config
 url = https://github.com/NorESMhub/ccs_config_noresm.git
-fxtag = ccs_config_noresm0.0.44
+fxtag = ccs_config_noresm0.0.49
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/ESMCI/ccs_config_cesm.git
 
 [submodule "cmeps"]
 path = components/cmeps
 url = https://github.com/NorESMhub/CMEPS.git
-fxtag = cmeps1.0.39_noresm_v0
+fxtag = cmeps1.0.39_noresm_v4
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/CMEPS.git
 
 [submodule "cdeps"]
 path = components/cdeps
 url = https://github.com/NorESMhub/CDEPS.git
-fxtag = cdeps1.0.70_noresm_v0
+fxtag = cdeps1.0.70_noresm_v7
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/CDEPS.git
 
@@ -46,7 +46,7 @@ fxDONOTUSEurl = https://github.com/NorESMHub/NorESM_share
 [submodule "ctsm"]
 path = components/clm
 url = https://github.com/NorESMhub/CTSM.git
-fxtag = ctsm5.3.030_noresm_v0
+fxtag = ctsm5.3.034_noresm_v7
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/ESCOMP/CTSM.git
 
