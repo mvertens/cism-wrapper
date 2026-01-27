@@ -400,8 +400,9 @@
      !
      ! TODO(wjs, 2021-06-25) change these to 0 or some other place-holder value once we have
      ! the coupling in place
-     salinity(:,:,:) = 35._r8
-     tocn(:,:,:) = 274._r8
+      !mp, 2024-06-19: coupling is now in place? Reading now these variables
+     salinity(:,:,:) = 0._r8
+     tocn(:,:,:) = 0._r8
 
      call glad_get_initial_outputs(ice_sheet, instance_index = ns, &
           ice_covered = ice_covered, &
