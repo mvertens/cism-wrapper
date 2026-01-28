@@ -991,6 +991,19 @@ Sub-elements of each entry include:
       Default: 1 for Greenland, 1 for Antarctica
     </desc>
   </entry>
+  
+    <entry id="stencil_size">
+    <type>integer</type>
+    <category>cism_config_ho_options</category>
+    <group>ho_options</group>
+    <values>
+      <value icesheet="gris">9</value>
+      <value icesheet="ais" >27</value>
+    </values>
+    <desc> Stencil size to be used in the thermal_forcing_extrapolate routine.
+      Default: 9 for Greenland, 27 for Antarctica
+    </desc>
+  </entry>
 
   <entry id="limit_marine_cliffs">
     <type>logical</type>
