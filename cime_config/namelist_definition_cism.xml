@@ -965,11 +965,11 @@ Sub-elements of each entry include:
 
   <entry id="force_retreat">
     <type>integer</type>
-    <category>cism_config_options</category>
-    <group>options</group>
+    <category>cism_config_ho_options</category>
+    <group>ho_options</group>
     <values>
-      <value icesheet="gris">0</value>
-      <value icesheet="ais" >0</value>
+      <value icesheet="gris">1</value>
+      <value icesheet="ais" >2</value>
     </values>
     <desc> Flag that indicates whether or not mask SMB outside present-day grid.
       0=no force retreat, 1=force retreat where indicated by retreat_mask,
