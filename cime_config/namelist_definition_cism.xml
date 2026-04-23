@@ -432,7 +432,7 @@ Sub-elements of each entry include:
       <value icesheet="gris" glc_grid="gris4">glc/cism/Greenland/greenland_4km_epsg3413_c251001.nc</value>
 
       <!-- the following is for software testing of Antarctica -->
-      <value icesheet="ais" glc_grid="ais8">glc/cism/Antarctica/ISMIP6_Antarctica_8km.init.c210908.nc</value>
+      <value icesheet="ais" glc_grid="ais8">glc/cism/Antarctica/antarctica_8km_epsg3031_c20250403.nc</value>
     </values>
     <desc>
       Input file
@@ -815,7 +815,7 @@ Sub-elements of each entry include:
     <valid_values>0,1,2,3</valid_values>
     <values>
       <value icesheet="gris">0</value>
-      <value icesheet="ais"> 2</value>
+      <value icesheet="ais">0</value>
     </values>
     <desc>
       0: Quadratic parameterization to compute basal melting from thermal forcing
@@ -1025,11 +1025,11 @@ Sub-elements of each entry include:
     <group>options</group>
     <values>
       <value icesheet="gris">.false.</value>
-      <value icesheet="ais" >.true.</value>
+      <value icesheet="ais" >.false.</value>
     </values>
     <desc>
       If true, then adjust thck to maintain usrf, instead of deriving usrf from topg and thck.
-      Default: .false. for Greenland, .true. for Antarctica
+      Default: .false. for Greenland, .false. for Antarctica
     </desc>
   </entry>
 
@@ -3134,6 +3134,21 @@ Sub-elements of each entry include:
     </desc>
   </entry>
 
+  <entry id="force_retreat">
+    <type>integer</type>
+    <category>cism_config_ho_options</category>
+    <group>ho_options</group>
+    <values>
+      <value icesheet="gris">0</value>
+      <value icesheet="ais" >0</value>
+    </values>
+    <desc> Flag that indicates whether or not mask SMB outside present-day grid.
+      0=no force retreat, 1=force retreat where indicated by retreat_mask,
+      2=force retreat for floating ice where indicated by retreat mask
+      Default: 0 for Greenland, 0 for Antarctica
+    </desc>
+  </entry>
+ 
   <!-- =============================================================  -->
   <!-- group: cism.icesheet.config: GTHF (geothermal heat flux)       -->
   <!-- =============================================================  -->
