@@ -429,7 +429,7 @@ Sub-elements of each entry include:
       <!-- the following is just for the sake of software testing, and should not be used for science -->
       <value icesheet="gris" glc_grid="gris20">glc/cism/Greenland/gland20.input_c150415.nc</value>
       <!-- this is the resolution that should be used for science applications with cism2 -->
-      <value icesheet="gris" glc_grid="gris4">glc/cism/Greenland/greenland_4km_epsg3413_c251001.nc</value>
+      <value icesheet="gris" glc_grid="gris4">glc/cism/Greenland/Greenland_4km.init.c27022025_usrf_reff_basins.nc</value>
 
       <!-- the following is for software testing of Antarctica -->
       <value icesheet="ais" glc_grid="ais8">glc/cism/Antarctica/antarctica_8km_epsg3031_c20250403.nc</value>
@@ -963,20 +963,7 @@ Sub-elements of each entry include:
     </desc>
   </entry>
 
-  <entry id="force_retreat">
-    <type>integer</type>
-    <category>cism_config_ho_options</category>
-    <group>ho_options</group>
-    <values>
-      <value icesheet="gris">1</value>
-      <value icesheet="ais" >2</value>
-    </values>
-    <desc> Flag that indicates whether or not mask SMB outside present-day grid.
-      0=no force retreat, 1=force retreat where indicated by retreat_mask,
-      2=force retreat for floating ice where indicated by retreat mask
-      Default: 0 for Greenland, 0 for Antarctica
-    </desc>
-  </entry>
+
  
   <entry id="use_ec_update">
     <type>integer</type>
