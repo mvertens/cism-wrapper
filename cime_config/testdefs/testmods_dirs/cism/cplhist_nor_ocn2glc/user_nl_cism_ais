@@ -1,10 +1,8 @@
 bmlt_float = 6
 bmlt_float_thermal_forcing_param = 0
-bmlt_float_ismip6_magnitude = 1 
+bmlt_float_ismip6_magnitude = 1
 ocean_data_domain = 2
 ocean_data_extrapolate = 1
 nzocn = 30
 dzocn = 60.
 marine_margin = 5
-which_ho_cp_inversion = 0
-which_ho_bmlt_basin_inversion = 0
