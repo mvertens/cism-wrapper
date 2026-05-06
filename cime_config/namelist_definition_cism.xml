@@ -454,7 +454,7 @@ Sub-elements of each entry include:
     <values>
       <value icesheet="gris" glc_grid="gris20" >76</value>
       <value icesheet="gris" glc_grid="gris4"  >421</value>
-      <value icesheet="ais"  glc_grid="ais8"   >704</value>
+      <value icesheet="ais"  glc_grid="ais8"   >761</value>
     </values>
     <desc>
       Number of nodes in x-direction
@@ -469,7 +469,7 @@ Sub-elements of each entry include:
     <values>
       <value icesheet="gris" glc_grid="gris20" >141</value>
       <value icesheet="gris" glc_grid="gris4"  >721</value>
-      <value icesheet="ais"  glc_grid="ais8"   >576</value>
+      <value icesheet="ais"  glc_grid="ais8"   >761</value>
     </values>
     <desc>
       Number of nodes in y-direction
@@ -484,7 +484,7 @@ Sub-elements of each entry include:
     <values>
       <value icesheet="gris" glc_grid="gris20" >11</value>
       <value icesheet="gris" glc_grid="gris4"  >11</value>
-      <value icesheet="ais"  glc_grid="ais8"   >11</value>
+      <value icesheet="ais"  glc_grid="ais8"   >5</value>
     </values>
     <desc>
       Number of nodes in z-direction
