@@ -953,7 +953,7 @@ Sub-elements of each entry include:
     <group>ho_options</group>
     <values>
       <value icesheet="gris">1</value>
-      <value icesheet="ais" >2</value>
+      <value icesheet="ais" >0</value>
     </values>
     <desc> Flag that indicates whether or not mask SMB outside present-day grid.
       0=no force retreat, 1=force retreat where indicated by retreat_mask,
