@@ -1,3 +1,4 @@
+./xmlchange GLC_AVG_PERIOD=yearly
 ./xmlchange DLND_CPLHIST_DIR='$DIN_LOC_ROOT/cplhist/noresm3_0/n1850.ne30pg3_tn14'
 ./xmlchange DLND_CPLHIST_CASE=n1850.ne30_tn14.rest-NOIIAJRARYF6162OC_20250506.3.0a03b.20250513
 ./xmlchange DLND_CPLHIST_YR_START=2

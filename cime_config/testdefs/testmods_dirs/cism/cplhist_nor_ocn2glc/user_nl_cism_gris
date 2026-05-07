@@ -1,5 +1,3 @@
-use_ec_update = 0
-force_retreat = 1
 block_inception = .true.
 ocean_data_domain = 2
 ocean_data_extrapolate = 1
@@ -50,4 +48,3 @@ inversion_babc_thck_scale = 200.
 inversion_babc_relax_factor = 0.05
 inversion_thck_flotation_buffer = 2.0
 inversion_thck_threshold = 1.0
-cisminputfile = '$DIN_LOC_ROOT/glc/cism/Greenland/Greenland_4km.init.c27022025_usrf_reff_basins.nc'

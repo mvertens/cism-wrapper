@@ -484,7 +484,7 @@ Sub-elements of each entry include:
     <values>
       <value icesheet="gris" glc_grid="gris20" >11</value>
       <value icesheet="gris" glc_grid="gris4"  >11</value>
-      <value icesheet="ais"  glc_grid="ais8"   >5</value>
+      <value icesheet="ais"  glc_grid="ais8"   >11</value>
     </values>
     <desc>
       Number of nodes in z-direction
@@ -815,7 +815,7 @@ Sub-elements of each entry include:
     <valid_values>0,1,2,3</valid_values>
     <values>
       <value icesheet="gris">0</value>
-      <value icesheet="ais">0</value>
+      <value icesheet="ais">1</value>
     </values>
     <desc>
       0: Quadratic parameterization to compute basal melting from thermal forcing
@@ -832,8 +832,8 @@ Sub-elements of each entry include:
     <group>options</group>
     <valid_values>0,1,2</valid_values>
     <values>
-      <value icesheet="gris">0</value>
-      <value icesheet="ais" >1</value>
+      <value icesheet="gris">2</value>
+      <value icesheet="ais" >2</value>
     </values>
     <desc>
       0: ocean data set internally by CISM
@@ -849,7 +849,7 @@ Sub-elements of each entry include:
     <group>options</group>
     <valid_values>0,1</valid_values>
     <values>
-      <value>0</value>
+      <value>1</value>
     </values>
     <desc>
       0: CISM will not extrapolate ocean data into cavities
@@ -1421,8 +1421,8 @@ Sub-elements of each entry include:
     <category>cism_config_parameters</category>
     <group>parameters</group>
     <values>
-      <value icesheet="gris">50.</value>
-      <value icesheet="ais" >50.</value>
+      <value icesheet="gris">100.</value>
+      <value icesheet="ais" >100.</value>
     </values>
     <desc>
       Thickness scale (in meters) over which gradients increase from zero to full value (HO only)
@@ -1611,7 +1611,7 @@ Sub-elements of each entry include:
     <category>cism_config_parameters</category>
     <group>parameters</group>
     <values>
-      <value>0.</value>
+      <value>-5.e-2</value>
     </values>
     <desc>
       Constant geothermal heat flux (W m-2; sign convention is positive down)
@@ -1760,7 +1760,7 @@ Sub-elements of each entry include:
     <category>cism_config_parameters</category>
     <group>parameters</group>
     <values>
-      <value>0.5</value>
+      <value>0.33</value>
     </values>
     <desc>
       Parameter for pseudo-plastic sliding law:
@@ -2364,7 +2364,7 @@ Sub-elements of each entry include:
     <category>cism_config_grid_ocn</category>
     <group>grid_ocn</group>
     <values>
-      <value icesheet="gris">1</value>
+      <value icesheet="gris">30</value>
       <value icesheet="ais" >30</value>
     </values>
     <desc>
@@ -2379,7 +2379,7 @@ Sub-elements of each entry include:
     <category>cism_config_grid_ocn</category>
     <group>grid_ocn</group>
     <values>
-      <value icesheet="gris">0.0</value>
+      <value icesheet="gris">60.</value>
       <value icesheet="ais" >60.</value>
     </values>
     <desc>
@@ -2394,7 +2394,7 @@ Sub-elements of each entry include:
     <category>cism_config_grid_ocn</category>
     <group>grid_ocn</group>
     <values>
-      <value icesheet="gris">0</value>
+      <value icesheet="gris">19</value>
       <value icesheet="ais" >16</value>
     </values>
     <desc>
@@ -2777,7 +2777,7 @@ Sub-elements of each entry include:
     <group>ho_options</group>
     <valid_values>0,1,2,3,4</valid_values>
     <values>
-      <value icesheet="gris">1</value>
+      <value icesheet="gris">3</value>
       <value icesheet="ais" >3</value>
     </values>
     <desc>
@@ -2916,7 +2916,7 @@ Sub-elements of each entry include:
     <group>ho_options</group>
     <valid_values>0,1,2,3</valid_values>
     <values>
-      <value>3</value>
+      <value>2</value>
     </values>
     <desc>
       Flag that indicates how to compute the flotation function at and near vertices in the Glissade dycore
@@ -2935,7 +2935,7 @@ Sub-elements of each entry include:
     <category>cism_config_ho_options</category>
     <group>ho_options</group>
     <values>
-      <value>50</value>
+      <value>100</value>
     </values>
     <desc>
       Maximum number of nonlinear iterations to be used by the Glissade velocity solver

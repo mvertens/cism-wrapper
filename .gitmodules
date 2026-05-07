@@ -4,7 +4,7 @@
 [submodule "source_cism"]
 path = source_cism
 url = https://github.com/NorESMhub/CISM
-fxtag = 3debdac7
+fxtag = 3478b94f
 fxrequired = AlwaysRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/CISM
 
