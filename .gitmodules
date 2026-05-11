@@ -4,70 +4,69 @@
 [submodule "source_cism"]
 path = source_cism
 url = https://github.com/NorESMhub/CISM
-fxtag = cism_main_2.02.002_noresm_v0
+fxtag = cism_main_2.01.017_noresm_v2
 fxrequired = AlwaysRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/CISM
 
 [submodule "cime"]
 path = cime
 url = https://github.com/NorESMhub/cime.git
-fxtag = cime6.1.73_noresm_v0
+fxtag = cime6.1.173_noresm_v0
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/cime.git
 
 [submodule "ccs_config"]
 path = ccs_config
 url = https://github.com/NorESMhub/ccs_config_noresm.git
-fxtag = ccs_config_noresm0.0.49
+fxtag = ccs_config_noresm0.0.65
 fxrequired = ToplevelRequired
-fxDONOTUSEurl = https://github.com/ESMCI/ccs_config_cesm.git
+fxDONOTUSEurl = https://github.com/NorESMhub/ccs_config_noresm.git
 
 [submodule "cmeps"]
 path = components/cmeps
 url = https://github.com/NorESMhub/CMEPS.git
-fxtag = cmeps1.0.39_noresm_v4
+fxtag = cmeps1.1.41_noresm_v0
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/NorESMhub/CMEPS.git
 
 [submodule "cdeps"]
 path = components/cdeps
-url = https://github.com/NorESMhub/CDEPS.git
-fxtag = cdeps1.0.70_noresm_v7
+url = https://github.com/NorESMhub/CDEPS
+fxtag = cdeps1.0.88_noresm_v2
 fxrequired = ToplevelRequired
-fxDONOTUSEurl = https://github.com/NorESMhub/CDEPS.git
+fxDONOTUSEurl = https://github.com/NorESMhub/CDEPS
 
 [submodule "share"]
 path = share
-url = https://github.com/NorESMHub/NorESM_share
-fxtag = share1.1.9_noresm_v0
+url = https://github.com/NorESMHub/NorESM_share.git
+fxtag = share1.1.18_noresm_v0
 fxrequired = ToplevelRequired
-fxDONOTUSEurl = https://github.com/NorESMHub/NorESM_share
+fxDONOTUSEurl = https://github.com/NorESMHub/NorESM_share.git
 
 [submodule "ctsm"]
 path = components/clm
 url = https://github.com/NorESMhub/CTSM.git
-fxtag = ctsm5.3.034_noresm_v7
+fxtag = ctsm5.4.002_noresm_v7
 fxrequired = ToplevelRequired
-fxDONOTUSEurl = https://github.com/ESCOMP/CTSM.git
+fxDONOTUSEurl = https://github.com/NorESMhub/CTSM.git
 
 [submodule "mosart"]
 path = components/mosart
-url = https://github.com/ESCOMP/MOSART.git
-fxtag = mosart1.1.08
+url = https://github.com/NorESMhub/MOSART.git
+fxtag = mosart1.1.12_noresm_v2
 fxrequired = ToplevelRequired
-fxDONOTUSEurl = https://github.com/ESCOMP/MOSART.git
-
-[submodule "mct"]
-path = libraries/mct
-url = https://github.com/MCSclimate/MCT
-fxtag = MCT_2.11.0
-fxrequired = ToplevelRequired
-fxDONOTUSEurl = https://github.com/MCSclimate/MCT
-
+fxDONOTUSEurl = https://github.com/NorESMhub/MOSART.git
 
 [submodule "parallelio"]
 path = libraries/parallelio
 url = https://github.com/NCAR/ParallelIO
-fxtag = pio2_6_2
+fxtag = pio2_6_6
 fxrequired = ToplevelRequired
 fxDONOTUSEurl = https://github.com/NCAR/ParallelIO
+
+[submodule "tools/CUPiD"]
+	path = tools/CUPiD
+	url = https://github.com/NCAR/CUPiD.git
+fxDONOTUSEurl = https://github.com/NCAR/CUPiD.git
+fxrequired = ToplevelRequired
+fxtag = v0.3.1
