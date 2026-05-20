@@ -28,7 +28,7 @@
   <test name="ERS_D_Ld9" grid="f19_f19_mtn14" compset="I1850Clm50SpG" testmods="cism/override_glc_frac">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm"/>
-      <machine name="olivia" compiler="intel" category="aux_cism_noresm"/>
+      <!-- <machine name="olivia" compiler="intel" category="aux_cism_noresm"/> -->
     </machines>
     <options>
       <option name="wallclock">01:30:00</option>
@@ -335,27 +335,26 @@
        Antarctica-only run. By doing both, we ensure that both Greenland
        and Antarctica are identical between a multi-ice sheet run and a
        single ice sheet run.
+       For now these work as I compset runs. If that stops being the
+       case due to hard-to-disable interactions between grid cells in
+       Greenland and those in Antarctica in CTSM, then we could change
+       these to T compset tests, though we wouldn't be exercising as
+       much code at that point. See the comments at the top of
+       multivssingle.py for more thoughts on this.  -->
 
-For now these work as I compset runs. If that stops being the
-case due to hard-to-disable interactions between grid cells in
-Greenland and those in Antarctica in CTSM, then we could change
-these to T compset tests, though we wouldn't be exercising as
-much code at that point. See the comments at the top of
-multivssingle.py for more thoughts on this.
-  -->
   <test name="MULTINOAIS_Ly2" grid="f19_f19_ais8gris4_mtn14" compset="I1850Clm50SpRsGag" testmods="cism/change_params">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm"/>
       <machine name="betzy" compiler="intel" category="prealpha_noresm"/>
       <machine name="olivia" compiler="intel" category="aux_cism_noresm"/>
       <machine name="olivia" compiler="intel" category="prealpha_noresm"/>
-      <options>
-        <option name="wallclock">1:50:00</option>
-        <option name="comment">Compare a run with Antarctica and Greenland against a run with just Greenland; Greenland should be bit-for-bit in the two runs. Using an I compset test to exercise smb renormalization as well as code related to glc -> lnd coupling. The use of the change_params testmod is not critical for this test, but this test is a useful one for exercising that testmod.</option>
-      </options>
-
     </machines>
+    <options>
+      <option name="wallclock">1:50:00</option>
+      <option name="comment">Compare a run with Antarctica and Greenland against a run with just Greenland; Greenland should be bit-for-bit in the two runs. Using an I compset test to exercise smb renormalization as well as code related to glc -> lnd coupling. The use of the change_params testmod is not critical for this test, but this test is a useful one for exercising that testmod.</option>
+    </options>
   </test>
+
   <test name="MULTINOGRIS_Ly2" grid="f19_f19_ais8gris4_mtn14" compset="I1850Clm50SpRsGag" testmods="cism/change_params">
     <machines>
       <machine name="betzy" compiler="intel" category="aux_cism_noresm"/>
